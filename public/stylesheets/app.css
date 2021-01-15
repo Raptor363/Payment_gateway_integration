@@ -1,0 +1,186 @@
+body {
+  background: #ffffff;
+  font-family: "Nunito", sans-serif;
+  color: black;
+}
+
+.btn{
+    margin-top: 5px;
+}
+
+.btn {
+    position: relative;
+    color: black;
+    width: 256px;
+    height: 68px;
+    line-height: 64px;
+    transition: all 0.3s;
+  }
+  
+  .btn::before, .btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .btn::before {
+	left: 4px;
+	z-index: 1;
+  
+  opacity: 0;
+  background: rgba(56, 194, 125, 0.3);
+  transform: scale(0.1, 1);
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover::after {
+  transform: scale(1, .1);
+  opacity: 0;
+}
+
+  @keyframes rotatecw {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+  
+  @keyframes rotateccw {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(-360deg);}
+  }
+  * { box-sizing: border-box; }
+  /* @import url('https://fonts.googleapis.com/css?family=Nunito:200,300,400,700'); */
+  
+  
+  body {
+    font-family: "Nunito", sans-serif;
+  }
+  
+  .container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  .left {
+    padding-left: 80px;
+    padding-right: 80px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .right {
+    flex: 1;
+    background-color: black;
+    transition: 1s;
+    background-image: url(https://images.pexels.com/photos/3923277/pexels-photo-3923277.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  
+  
+  .header > h2 {
+    margin: 0;
+    color: #000000;
+  }
+  
+  .header > h4 {
+    margin-top: 10px;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,.4);
+  }
+  
+  .form {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form > p {
+    text-align: right;
+  }
+  
+  .form > p > a {
+    color: #000;
+    font-size: 14px;
+  }
+  
+  .form-control {
+    height: 46px;
+    padding: 0 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Rubik', sans-serif;
+    outline: 0;
+    transition: .2s;
+    margin-top: 20px;
+  }
+  
+  .form-control:focus {
+    border-color: #0f7ef1;
+  }
+  
+button {
+    padding: 14px 10px;
+    border: 0;
+    background: linear-gradient(to right, #81ecda 0%,#3a82d4 100%); 
+    border-radius: 3px;
+    margin-top: 10px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-family: 'Rubik', sans-serif;
+  }
+
+  button:hover {
+    background-color: #3a82d4;
+  }
+
+  .centered {
+    background-color: #bbdba8;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .success{
+    text-align: center;
+    font-size: large;
+    font-weight: 200;
+  }
+  
+  .image {
+  position: relative;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-size: 60px;
+  font-weight: 500;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,152 @@
+body {
+    background: #ffffff;
+    font-family: "Nunito", sans-serif;
+    color: black;
+}
+
+h5 {
+   color: #262925;
+   font-weight: 100;
+}
+
+p {
+    color: #262925;
+    font-weight: 300;
+}
+
+.lorem{
+    padding: 150px;
+    text-align: center;
+    background-color: #0000000e;
+    color: rgb(0, 0, 0);
+}
+
+.quote{
+    font-size: larger;
+}
+
+.carousel{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.content {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#mainNavbar {
+    font-size: 1.5rem;
+    font-weight: 100;    
+}
+
+#mainNavbar .nav-link {
+    color: rgb(0, 0, 0);
+}
+
+#mainNavbar .navbar-brand {
+    /* color: #68ea1c; */
+    font-size: 1.5rem;
+}
+
+#headingGroup span {
+    color: #68ea1c;
+}
+
+#headingGroup h1 {
+    font-weight: 100;
+    font-size: 4rem;
+    color: black;
+}
+
+.navbar.scrolled {
+    background: rgb(222,192,222);
+    transition: background 500ms;
+}
+
+@media (max-width: 1200px) {
+    #headingGroup h1 {
+        font-weight: 100;
+        font-size: 3rem;
+    }
+}
+
+.btn{
+    margin-top: 5px;
+}
+
+.btn {
+    position: relative;
+    color: black;
+    width: 256px;
+    height: 68px;
+    line-height: 64px;
+    transition: all 0.3s;
+  }
+  
+  .btn::before, .btn::after {
+    content: '';
+    position: absolute;
+    transition: all 0.3s;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+
+  .btn::before {
+	left: 4px;
+	z-index: 1;
+  
+  opacity: 0;
+  background: rgba(86, 238, 48, 0.3);
+  transform: scale(0.1, 1);
+}
+
+.btn:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn::after {
+  transition: all 0.3s;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.btn:hover::after {
+  transform: scale(1, .1);
+  opacity: 0;
+}
+
+  @keyframes rotatecw {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(360deg);}
+  }
+  
+  @keyframes rotateccw {
+      from {transform: rotate(0deg);}
+      to {transform: rotate(-360deg);}
+  }
+
+.fixed-footer{
+    width: 100%;
+    position: fixed;        
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 0;
+    color: #fff;
+}
+.fixed-footer{
+    bottom: 0;
+}
+.lorem2{
+    padding: 100px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#footer {
+    padding: 50px;
+    text-align: center;
+    background-color: #fff;
+}
