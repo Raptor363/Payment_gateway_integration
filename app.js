@@ -44,7 +44,7 @@ app.post("/pay", (req, res) => {
     data.amount = amount;                 
     data.name=name;
     data.email=email;
-    data.setRedirectUrl("http://localhost:3000/success");
+    data.setRedirectUrl("https://better-world-initiative.herokuapp.com/success");
     data.send_email ="True"   
     Insta.createPayment(data, function(err, response) {
         if (err) {
