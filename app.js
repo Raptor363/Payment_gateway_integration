@@ -3,6 +3,8 @@ const bodyParser = require("body-parser");
 const path = require('path');
 const express = require("express");
 const { constants } = require("buffer");
+const dotenv = require('dotenv');
+dotenv.config();
 
 const API_KEY = process.env.API_KEY;
 
